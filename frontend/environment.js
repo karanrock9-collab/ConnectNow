@@ -1,7 +1,7 @@
-let IS_PROD = true;
+const isProd = import.meta.env.MODE === "production";
 
-const server = IS_PROD
-  ? "http://localhost:8000"
-  : "https://connectnow-8q7h.onrender.com";
+const server = isProd
+  ? "https://connectnow-8q7h.onrender.com"
+  : "http://localhost:8000";
 
 export default server;
