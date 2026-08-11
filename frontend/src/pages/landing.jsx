@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
+import mobile from "./assets/mobile.png";
 
 function LandingPage() {
   return (
@@ -37,7 +38,7 @@ function LandingPage() {
           </div>
         </div>
         <div>
-          <img src="src/assets/mobile.png" alt="" />
+          <img src={mobile} alt="Mobile" />
         </div>
       </div>
     </div>

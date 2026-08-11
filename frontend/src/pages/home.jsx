@@ -5,6 +5,7 @@ import "../App.css";
 import { Button, IconButton, TextField } from "@mui/material";
 import RestoreIcon from "@mui/icons-material/Restore";
 import { AuthContext } from "../contexts/AuthContext";
+import mobile from "./assets/mobile.png";
 
 function HomeComponent() {
   let navigate = useNavigate();
@@ -63,7 +64,7 @@ function HomeComponent() {
           </div>
         </div>
         <div className="rightPanel">
-          <img srcSet="../assets/logo3.png" alt="" />
+          <img src={mobile} alt="Mobile" />
         </div>
       </div>
     </>
