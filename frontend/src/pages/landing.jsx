@@ -11,13 +11,9 @@ function LandingPage() {
           <h2>ConnectNow</h2>
         </div>
         <div className="navList">
-          <p
-            onClick={() => {
-              window.location.href = "/saas";
-            }}
-          >
+          <Link to="/auth" className="navLink">
             Join as Guest
-          </p>
+          </Link>
           <p>Register</p>
           <div role="button">
             <p>Login</p>
