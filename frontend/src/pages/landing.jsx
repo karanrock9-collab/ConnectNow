@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
-import mobile from "./assets/mobile.png";
+import mobile from "../assets/mobile.png";
 
 function LandingPage() {
   return (
