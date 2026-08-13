@@ -64,7 +64,7 @@ function HomeComponent() {
           </div>
         </div>
         <div className="rightPanel">
-          <img src={logo3} alt="Mobile" />
+          <img src={logo3} alt="Logo3" />
         </div>
       </div>
     </>
