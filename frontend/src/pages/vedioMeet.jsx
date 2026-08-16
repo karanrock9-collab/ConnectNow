@@ -484,8 +484,12 @@ export default function VideoMeetComponent() {
   };
 
   let sendMessage = () => {
-    console.log(socketRef.current);
-    socketRef.current.emit("chat-message", message, username);
+    const trimmedMessage = message.trim();
+    if (!trimmedMessage || !socketRef.current) {
+      return;
+    }
+
+    socketRef.current.emit("chat-message", trimmedMessage, username);
     setMessage("");
 
     // this.setState({ message: "", sender: username })
