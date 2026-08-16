@@ -1,9 +1,10 @@
 import React from "react";
 import "../App.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import mobile from "../assets/mobile.png";
 
 function LandingPage() {
+  const router = useNavigate();
   return (
     <div className="LandingPageContainer">
       <nav>
@@ -11,12 +12,28 @@ function LandingPage() {
           <h2>ConnectNow</h2>
         </div>
         <div className="navList">
-          <Link to="/auth" className="navLink">
+          <p
+            onClick={() => {
+              router("/aljk23");
+            }}
+          >
             Join as Guest
-          </Link>
-          <p>Register</p>
+          </p>
+          <p
+            onClick={() => {
+              router("/auth");
+            }}
+          >
+            Register
+          </p>
           <div role="button">
-            <p>Login</p>
+            <p
+              onClick={() => {
+                router("/auth");
+              }}
+            >
+              Login
+            </p>
           </div>
         </div>
       </nav>

@@ -5,7 +5,7 @@ import "../App.css";
 import { Button, IconButton, TextField } from "@mui/material";
 import RestoreIcon from "@mui/icons-material/Restore";
 import { AuthContext } from "../contexts/AuthContext";
-import mobile from "../assets/logo3.png";
+import logo3 from "../assets/logo3.png";
 
 function HomeComponent() {
   let navigate = useNavigate();
